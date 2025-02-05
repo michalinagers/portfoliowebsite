@@ -1,0 +1,249 @@
+body {
+  background-image: url('https://i.imgur.com/cx4XR4x.gif');
+  background-size: cover;  /* Makes sure the GIF covers the entire screen */
+  background-position: center center;  /* Centers the GIF */
+  background-attachment: fixed;  /* Keeps the background fixed when scrolling */
+  background-repeat: no-repeat;  /* Ensures the GIF doesn’t repeat */
+  color: white;
+}
+
+.dosis-font {
+  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: 499;
+  font-style: normal;
+  font-size: 150px;
+  text-align:center;
+  color:rgb(184, 182, 182);
+  margin-top:230px;
+}
+
+.title {
+  color:rgb(184, 182, 182);
+  font-size: 40px;
+  text-align:center;
+  margin-top: -125px;
+}
+
+/* Remove bullet points and make the buttons inline */
+/* Container for buttons as flexbox */
+/* The container holding the buttons */
+ul {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center buttons horizontally */
+  align-items: center; /* Center buttons vertically */
+  height: 100vh; /* Full height of the viewport */
+  padding: 0;
+  margin: 0;
+  flex-direction: row; /* Align buttons horizontally */
+}
+
+/* Remove bullet points */
+li {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style for the buttons */
+button.mainbutton {
+  font-family: "Dosis", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-optical-sizing: auto;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: inherit;
+  margin-left: 10px;
+}
+
+/* Optional: Remove margin from last button */
+button.mainbutton:last-child {
+  margin-right: 0;
+}
+
+/* Move the buttons up a bit */
+ul {
+  margin-top: -380px; /* Adjust this value to move buttons up or down */
+}
+
+.box {
+  border: 2px solid rgb(255, 255, 255);
+  background-color: transparent;
+  padding: 20px;
+  height: 630px;
+  max-width: 1420px; /* Set a max width if you want to limit it */
+  margin: 20px auto;
+  position: relative;
+  text-align: center; /* This will center your content within the box */
+}
+
+
+button.mainbutton:hover {
+    font-weight:bold;
+}
+
+button.aboutbutton:hover {
+  font-weight:bold;
+}
+
+button.contactbutton:hover {
+  font-weight:bold;
+}
+
+.copyright {
+  position: absolute;
+  margin-top:-100px;
+  margin-left: 1455px;
+  transform: rotate(90deg);  /* Rotate text by 45 degrees */
+  display: inline-block;     /* Make the element behave like an inline element */
+  white-space: nowrap; 
+}
+
+/* Style for the unordered list */
+ul.social-links {
+  list-style-type: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the items horizontally */
+  margin-top: -330px;
+}
+
+/* Style for each list item */
+ul.social-links .social-item {
+  margin: 0 15px; /* Add space between the icons */
+}
+
+/* Style for the social media icons */
+ul.social-links .social-icon {
+  width: 50px; /* Reduce the size of the icon */
+  height: 50px; /* Reduce the size of the icon */
+}
+
+h1 {
+  color: #ffffff; /* Sets the color of all <h1> tags to a red-orange */
+}
+
+.about {
+  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: 499;
+  font-style: normal;
+  font-size: 50px;
+  color:rgb(184, 182, 182);
+  margin-top:10px;
+  margin-left: -1050px;
+}
+
+.contacttext {
+  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: 30px;
+  color:rgb(184, 182, 182);
+  margin-top:10px;
+  margin-left: -150px;
+}
+
+.email {
+  margin-left: 50px;
+}
+
+.projecttitle {
+  font-weight: bold;
+  margin-left: 300px;
+  margin-top: -15px;
+}
+
+.contact1 {
+  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-size: 30px;
+  color:rgb(184, 182, 182);
+  margin-top:-300px;
+  margin-left: -80px;
+}
+
+.new {
+
+  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: 499;
+  font-style: normal;
+  font-size: 25px;
+  text-align:center;
+  color:rgb(184, 182, 182);
+  margin-top:-30px;
+  margin-left: -1170px;
+}
+
+/* This will target the specific UL with the "about-buttons" class */
+ul.about-buttons {
+  display: flex;           /* Use flexbox */
+  flex-direction: column;  /* Stack the buttons vertically */
+  align-items: flex-start; /* Align buttons to the left */
+  padding: 0;
+  margin: 0;
+  margin-top: -780px;
+  padding-left: 14px;
+}
+
+/* Button styling for the about buttons */
+button.aboutbutton {
+  font-family: "Dosis", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-optical-sizing: auto;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: inherit;
+  margin: 10px 0;  /* Adjust vertical spacing between buttons */
+  display: block;   /* Make each button occupy its own line */
+}
+
+.aboutmetext {
+  font-family: "Dosis", serif;
+  font-optical-sizing: auto;
+  font-weight: 499;
+  font-style: normal;
+  font-size: 17px;
+  text-align: justify;
+  color: rgb(184, 182, 182);
+  margin-top: 0px;
+  margin-left: 550px;
+  width: 500px; /* Adjust this to control the width of the text box */
+  height: auto;  /* Adjust height according to content */
+  padding: 10px; /* Adds padding inside the text box */
+}
+
+ul.contact-buttons {
+  display: flex;           /* Use flexbox */
+  flex-direction: column;  /* Stack the buttons vertically */
+  align-items: flex-start; /* Align buttons to the left */
+  padding: 0;
+  margin: 0;
+  margin-top: -530px;
+  padding-left: 14px;
+}
+
+/* Button styling for the about buttons */
+button.contactbuttons {
+  font-family: "Dosis", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-optical-sizing: auto;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: inherit;
+  margin: 10px 0;  /* Adjust vertical spacing between buttons */
+  display: block;   /* Make each button occupy its own line */
+}
